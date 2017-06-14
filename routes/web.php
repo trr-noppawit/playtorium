@@ -26,3 +26,7 @@ Route::get('/leave_request', function () {
 Route::get('/project', function () {
     return view('project');
 });
+
+Route::post('/submit' , 'MessagesController@submit');
+
+Route::get('/export' , 'MessagesController@export');

@@ -20,8 +20,14 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-md-offset-4">
+            <form action="/timesheet">
             <form action="">
               <h1>Hello!</h1>
+				<p>
+				<?php
+				echo $name[0]->username;
+				?>
+				</p>
               <div class="form-group">
                 <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
               </div>

@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+Route::get('/', 'LoginController@login');
 
 Route::get('/timesheet', function () {
     return view('timesheet');
